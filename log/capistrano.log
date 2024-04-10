@@ -1,0 +1,6 @@
+# Logfile created on 2024-04-10 16:01:05 +0700 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-10 16:01:05 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1a6f643f] Running [ -d $HOME/.rbenv/versions/3.0.2 ] on 54.167.235.125
+ DEBUG [1a6f643f] Command: [ -d $HOME/.rbenv/versions/3.0.2 ]
