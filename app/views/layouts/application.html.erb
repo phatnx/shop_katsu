@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | Mr.Katsu</title>
+    <meta id="metaDescription" name="description" content="Trần Hữu Thắng, shop mr.katsu, buy everything your need">
+    <meta property="og:description" content="Trần Hữu Thắng, shop mr.katsu, shopmrkatsu.tk, shopmrkatsu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://shopmrkatsu.tk/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'bootstrap.min' %>
+    <%= javascript_include_tag 'jquery-filterable' %>
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1"></script>
+    <%=javascript_include_tag('frontend/categories.js') %>
+    <%=stylesheet_link_tag('price-range.css') %>
+    <%=stylesheet_link_tag('font-awesome.min.css') %>
+    <%=stylesheet_link_tag('animate.css') %>
+    <%=javascript_include_tag('jquery.js') %>
+    <%=javascript_include_tag('bootstrap.min.js') %>
+    <%=javascript_include_tag('jquery.scrollUp.min.js') %>
+    <%=javascript_include_tag('jquery.prettyPhoto.js') %>
+    <%=javascript_include_tag('manager/product.js') %>
+    <%=javascript_include_tag('manager/cart.js') %>
+    <%=javascript_include_tag('manager/blog.js') %>
+    <%=javascript_include_tag('lightbox.min.js') %>
+    <%=stylesheet_link_tag('lightbox.min.css') %>
+    <%=javascript_include_tag('handlerbar.js') %>
+    <%=javascript_include_tag('query.ez-plus.js') %>
+    <%=javascript_include_tag('chartkick.min.js') %>
+    <%=javascript_include_tag('jquery.cookie.js') %>
+    <%=stylesheet_link_tag('slick.css') %>
+    <%=javascript_include_tag('slick.min.js') %>
+    <%=javascript_include_tag('jquery.ui.js') %>
+    <%=javascript_include_tag('register-compare-handlebar.js') %>
+    <%=javascript_include_tag('lodash.min.js') %>
+  </head>
+  <body>
+    <!-- LOADER -->
+    <%= render 'layouts/header' %>
+    <% if notice%>
+      <div id="notice_wraper">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% elsif flash %>
+      <% flash.each do |message_type, message| %>
+        <div  style="align-items: center;text-align: center;background: #e8a62d59;color: red;" class="alert alert-<%= message_type %>"><span><%= message %></span></div>
+      <% end %>
+    <% end %>
+    <div id="loader" style="display: flex;justify-content: center;align-items: center;">
+      <div class="position-center-center">
+        <div class="ldr"></div>
+      </div>
+    </div>
+    <div class="show_body" style="display:none">
+      <script>
+        $("#loader").fadeOut("slow");
+        $(".show_body").css("display","block")
+      </script>
+      <!-- Modal -->
+      <div class="modal fade product-details"  id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      </div>
+      <%= yield %>
+      <script>
+        setTimeout(function() {
+          $('#notice_wraper').fadeOut("slow", function () {
+            $(this).remove();
+          });
+        }, 2000);
+      </script>
+    </div>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=219816340114971&autoLogAppEvents=1" nonce="WK7rdaIn"></script>
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "2741635706062292");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script id="list-search-template" type="text/x-handlebars-template">
+  <div class="features_items">
+    <h2 class="title text-center"> Result search for {{keyword}}</h2>
+    {{#if products.length }}
+      {{#each products}}
+      <div class="col-sm-4 col-xs-6">
+        <div class="product-image-wrapper">
+            <div class="single-products">
+                <div class="productinfo text-center">
+                    <input type="hidden" id="{{id}}" class="id" value="{{id}}">
+                    <a href="/<%=I18n.locale %>/product-details/{{title}}~{{id}}"> <img class="imageProduct" src="{{image_url1}}" alt="" /></a>
+                    <h2 class="price">${{price}}</h2>
+                    <p class="title">{{title}}</p>
+                </div>
+            </div>
+            <div class="choose">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="/<%=I18n.locale %>/product-details/{{title}}~{{id}}"><i class="fa fa-plus-square"></i><%= t 'loadMore.text' %></a></li>
+                    <li><a href="javascript:void(0)" class="quick_view"  product-id= "{{id}}>" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square"></i> <%= t 'quick_view.text' %></a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <div class="features_items">
+      <h2 style=" text-align: center;"> <%= t("messages.search_product") %></h2>
+    </div>
+  {{/if}}
+</script>
+<!-- Messenger Plugin chat Code -->
+<script id="list-detail-quick-review-template" type="text/x-handlebars-template">
+  {{#if products }}
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="display:none">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><%= t'product.detail' %></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div style="text-align: center">
+            <div id="load" style="display:block">
+              <img src="//s.svgbox.net/loaders.svg?fill=maroon&ic=tail-spin"
+                  style="width:24px">
+            </div>
+        </div>
+       <div class="">
+            <div class="img-review col-sm-5" >
+            <div class="view-product">
+                <img id="zoom_01" class="imageProduct" src="{{products.image_url}}" alt="">
+                    <a href="{{products.image_url}}" rel="prettyPhoto" id="image-review"  class="zoom-image">
+                    <h3>ZOOM</h3>
+                </a>
+            </div>
+        <div id="similar-product" class="carousel slide" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                </div>
+
+                <div class="item">
+                </div>
+            </div>
+
+                <!-- Controls -->
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="product-information ">
+                <!--/product-information-->
+                <input type="hidden" id="{{products.id}}" class="id" value="">
+                <img src="/assets/product-details/new.jpg" class="newarrival" alt="">
+                <h2 style="text-align: center" class="title">{{products.name}}</h2>
+                <div class="list-rate">
+                </div>
+                  <div style="display: flex; justify-content: center; cursor: pointer;">
+                      <span style="margin-right: 10px" class="fa fa-star" id="star-1"></span>
+                      <span style="margin-right: 10px" class="fa fa-star" id="star-2"></span>
+                      <span style="margin-right: 10px" class="fa fa-star" id="star-3"></span>
+                      <span style="margin-right: 10px" class="fa fa-star" id="star-4"></span>
+                      <span style="margin-right: 10px" class="fa fa-star" id="star-5"></span>
+                        <span>({{products.avg}}/5)</span>
+
+                  </div>
+
+                <span class="product_love" style="text-align: center">
+                        <i class="fa fa-heart" id="hear-f" onclick="return confirm('You must be logged in to perform this function')"></i>
+                </span>
+
+                <span>
+                    <span style="text-align: center; width: 100%" class="price">USD ${{products.price}}
+                          {{#when products.price_old 'gt' 0 }}
+                            <del class="price_old">${{products.price_old}}</del>
+                          {{else}}
+                            <del class="price_old"></del>
+                          {{/when}}
+                      </span>
+
+                    <label style="font-size:15px">Quantity:</label>
+                    <input type="number" name= "my-input" id="numberInput" class="quantity" value="1" min="1" max="{{products.number_intock}}">
+                       {{#when products.number_instock 'gt' 0 }}
+                        <button type="submit" class="btn btn-fefault cart add-to-cart-detail">
+                            <i class="fa fa-shopping-cart"></i>
+                            <%= t 'product.add_to_cart' %>
+                        </button>
+                        {{else}}
+                          <button type="submit" class="btn btn-danger">
+                                <i class="fa fa-shopping-cart"></i>
+                                <%= t 'product.out_of_stock' %>:
+                          </button>
+                        {{/when}}
+                </span>
+                <div>
+                <span style="font-size:15px"> <b> <%= t 'product.choose_size' %> </b> </span>
+
+                  <div class="sprd-select__items">
+                    {{#each products.size}}
+                      {{#when @index 'eq' 0}}
+                            <div class="button active">{{this}} </div>
+                        {{/when}}
+                        {{#when @index 'gt' 0}}
+                            <div class="button ">{{this}} </div>
+                        {{/when}}
+                    {{/each}}
+                  </div>
+                </div>
+                <p><b>Availability:</b> {{products.availability}}</p>
+                <p><b>Number instock:</b>  {{products.number_instock}}</p>
+                <p><b>Status:</b>  {{products.status}}</p>
+                <p><b>Brands:</b> {{products.brand}}</p>
+                <p><b>Views: </b> {{products.views}} <i class="fa fa-eye"></i></p>
+                <p><b>Share:</b> <a href="https://www.facebook.com/share.php?u=http://shopmrkatsu.tk/en/product-details/shirt~1"><i class="fa fa-facebook-square fa-2x facebook" style="font-size: 1.5em;"></i></a></p>
+            </div>
+            <!--/product-information-->
+        </div>
+     </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" style="margin-top: -15px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    {{else}}
+    <div style="text-align: center">
+          <button class="load_more spinner-border btn btn-warning" style="margin: 0 auto; background-color: #fe980f; margin-bottom: 15px;" data-style="expand-left"  ><%= t 'loadMore.text' %></button>
+          <div id="load" style="display:none">
+            <img src="//s.svgbox.net/loaders.svg?fill=maroon&ic=tail-spin"
+                style="width:24px">
+          </div>
+          <%# <%= paginate @results[:features_items], theme: 'twitter-bootstrap-4'  %>
+    </div>
+  {{/if}}
+</script>

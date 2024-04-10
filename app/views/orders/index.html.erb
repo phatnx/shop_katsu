@@ -1,0 +1,159 @@
+<%=javascript_include_tag('manager/product.js') %>
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="left-sidebar">
+      <%= render 'orders/left' %>
+      </div>
+    </div>
+    
+    <div class="col-sm-9 padding-right">
+    <label for="start"><%= t("orders_info.search_month")%>:</label>
+    <input type="month" id="start" name="start" min="2018-03" value="2021-10">
+    <button id="submit" style="color: #fff;
+    background-color: #fe980f;" class="btn"> <span> <i class="fa fa-search"></i></span></button>
+    
+    <section id="cart_items">
+		<div class="">
+			<div class="table-responsive cart_info">
+      <% if @results[:carts_order].size > 0 %>
+      <table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image"><%= t "product.image"%></td>
+							<td class="description "><%= t "product.name"%></td>
+              <td class="description"><%= t "product.size"%></td>
+              <td class="description quantity"><%= t "product.quantity"%></td>
+              <td class="description"><%= t "product.price"%></td>
+							<td class="description"><%= t "product.total_price"%></td>
+							<td class="description"><%= t "product.status" %></td>
+							<td class="description"><%= t "product.buy_date" %></td>
+							<td><%= t "product.action" %></td>
+						</tr>
+					</thead>
+          <% else %>
+           <h2 style="text-align: center"> <%= t "messages.have_not_order" %> <h2>
+      <% end %>
+			
+					<tbody class="tbody">
+          <% @results[:carts_order].each do |order| %>
+            <% order[:product_order].each do |c| %>
+              <tr>
+                <td class="cart_product">
+                  <a href="/<%=I18n.locale %>/product-details/<%= c["name_product"] %>~<%=c["id"] %>"> <%= image_tag c["image_product"], size: "110x110", alt: "Image" %></a>
+                </td>
+                <td class="name_product">
+                  <h4><a href="/<%=I18n.locale %>/product-details/<%= c["name_product"] %>~<%=c["id"] %>""><%= c["name_product"] %></a></h4>
+                  <p>Orders ID: <%= order[:order].id %></p>
+                </td>
+                <td class="size_product">
+                  <p><%= c["size_product"] %></p>
+                </td>
+                <td class="quantity">
+                  <p><%= c["quantity"] %></p>
+                </td>
+                 <td class="price_product">
+                  <p><%= c["price_product"] %></p>
+                </td>
+                <td class="cart_total_price">
+                  <p class="cart_total_price">$<%= c["total"] %></p>
+                </td>
+                <td class="status_order">
+                  <% case order[:order].status %>
+                  <% when 0 %>
+                    <p class=""><%= t("status.pending") %></p>
+                    <% when 1 %>
+                    <p class=""><%= t("status.confirmed") %></p>
+                    <% when 2 %>
+                    <p class=""><%= t("status.cancel") %></p>
+                  <% end %>
+                </td>
+                <td class="created_at">
+                  <p><%= order[:order].created_at.strftime("%d/%m/%Y") %></p>
+                </td>
+                <% if order[:order].status == Product::STATUS["pending"].to_i  %>
+                    <td><button class="submit_delete btn btn-danger"  product_id="<%= c["id"] %>" order_id="<%= order[:order].id %>"  > X </button> </td>
+                <% end %>
+              </tr>
+               
+              <% end %>
+               <td > 
+                  <div class=""> <span  style="font-size:15px" class="font-weight-bold"><%= t("orders_info.total_order") %>: </span> <span style="font-size:15px">$<%= @Total_order = order[:product_order].map{|order| order["price_product"].to_f * order["quantity"].to_i}.sum  %></span> </div>
+                    <div class=""> <span  style="font-size:15px" class="font-weight-bold"><%= t("orders_info.fee_shipping") %>: </span> <span style="font-size:15px"> + $<%= order[:order].fee %></span> </div>
+                     <div class=""> <span  style="font-size:15px" class="font-weight-bold"><%= t("orders_info.service") %>: </span style="font-size:15px"> <%= order[:order].service %> </div>
+                    <div class=""> <span  style="font-size:15px" class="font-weight-bold"><%= t("orders_info.voucher") %>: </span> <span style="font-size:15px"> - $<%= order[:order]&.voucher ? order[:order].voucher : 0 %></span> </div>
+                    
+                    <span>------------------------------------ <span>
+                    <% if order[:order]&.voucher  %>
+                        <div class="mt-3"> <span class="font-weight-bold"></span> <span class="btn btn-primary font-weight-bold theme-color"><%= t("orders_info.payment")%>: $<%= @Total_order - order[:order].voucher  + order[:order].fee%></span> </div>
+                      <% else %>
+                        <div class="mt-3"> <span class="font-weight-bold"></span> <span class="btn btn-primary font-weight-bold theme-color"><%= t("orders_info.payment")%>: $<%= @Total_order.to_f + order[:order].fee %></span> </div>
+                    <% end %>
+                </td>
+          <% end %>
+      
+					</tbody>
+             
+				</table>
+         <span style="display: none; background-color: #fe800f;" class="btn btn-primary font-weight-bold theme-color total_order_of_month" >  30<span>
+    		 <div style="text-align: center">
+        	<%= paginate @results[:orders], theme: 'twitter-bootstrap-4' %>
+         </div>
+			</div>
+		</div>  
+    </div>
+  </div>
+</div>
+</section>
+<script id="list-product-template" type="text/x-handlebars-template">
+  {{#if carts_order.length }}
+    {{#each carts_order}}
+      <tr>
+        <td class="cart_product">
+          <a href=""> <img src={{image_product}} width="110" height="110"> </a>
+        </td>
+        <td class="cart_description">
+          <p><a href="">{{name_product}}</a></p>
+        </td>
+        <td class="cart_description">
+         <p>{{size_product}}</p>
+        </td>
+        <td class="cart_description">
+         <p>{{quantity}}</p>
+        </td>
+          <td class="cart_description">
+         <p>{{price_product}}</p>
+        </td>
+        <td class="cart_description">
+          <p class="cart_total_price">${{total}}</p>
+        </td>
+        <td class="cart_description">
+            <p class="">Confirm</p>
+        </td>
+      </tr>
+  {{/each}}
+  <style type="text/css">
+    .product_month{
+        display:none
+    }
+  </style>
+  {{else}}
+    <style type="text/css">
+    thead{
+        display:none
+    }
+  </style>
+      <h2 style=" text-align: center;"><%= t("messages.dont_have_product_this_month") %>  </h2>
+  {{/if}}
+
+</script>
+<style>
+.btn.btn-primary {
+    background: #e81818;
+    border: 0 none;
+    border-radius: 0;
+    font-weight: 700;
+    margin-top: 16px;
+}
+</style>

@@ -1,0 +1,58 @@
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="left-sidebar">
+      <%= render 'orders/left' %>
+      </div>
+    </div>
+    
+    <div class="col-sm-9 padding-right">
+    <section id="cart_items">
+		<div class="">
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+              <td class="id">ID</td>
+							<td class="image"><%= t "product.image"%></td>
+							<td class="description"><%= t "product.name"%></td>
+              <td class="description"><%= t "product.price"%></td>
+              <td class="date"><%= t "product.date" %><td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+          <% @results[:history_products].each do |p| %>
+              <tr>
+              <% if p.product.present? && p.product.image.attached? %>
+                <td>
+                   <p><%=p.product_id%></p>
+                </td>
+                <td class="cart_product">
+                    <a href="/<%=I18n.locale %>/product-details/<%= p.product.title.parameterize%>~<%=p.product_id%>"><img src="<%= url_for(p.product.image) %>" alt=""width="110" height="110"</a>
+                </td>
+                <td class="cart_title">
+                  <h4><a href="/<%=I18n.locale %>/product-details/<%= p.product.title.parameterize%>~<%=p.product_id%>"><%= p.product.title %></a></h4>
+                </td>
+                <td class="cart_price">
+                   <span style="font-size: 15px"><%= p.product.price %></span>
+                </td>
+                <td><%= p.created_at.strftime("%d/%m/%Y") %></td>
+              <% end %>
+              </tr>
+          <% end %>
+					</tbody>
+				</table>
+
+			</div>
+        <div style="text-align: center">
+        	<%= paginate @results[:history_products], theme: 'twitter-bootstrap-4' %>
+        </div>
+		</div>
+	</section> <!--/#cart_items-->
+      
+    </div>
+  </div>
+</div>
+</section>
