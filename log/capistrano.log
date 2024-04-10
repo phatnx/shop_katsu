@@ -4,3 +4,10 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [1a6f643f] Running [ -d $HOME/.rbenv/versions/3.0.2 ] on 54.167.235.125
  DEBUG [1a6f643f] Command: [ -d $HOME/.rbenv/versions/3.0.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-10 16:02:32 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ff1c4444] Running [ -d $HOME/.rbenv/versions/3.0.2 ] on 100.26.47.209
+ DEBUG [ff1c4444] Command: [ -d $HOME/.rbenv/versions/3.0.2 ]
+ DEBUG [ff1c4444] Finished in 4.125 seconds with exit status 1 (failed).
+  WARN rbenv: 3.0.2 is not installed or not found in $HOME/.rbenv/versions/3.0.2 on 100.26.47.209

@@ -4,8 +4,8 @@ server '100.26.47.209', port: 22, roles: [:web, :app, :db], primary: true
 set :repo_url,        'git@github.com:phatnx/shop_katsu.git'
 set :application,     'shop_katsu'
 
-set :rbenv_ruby,      '3.0.2'
-# set :rbenv_ruby_dir,  '/home/ubuntu/.rbenv/versions/3.0.2'
+set :rbenv_ruby,      '2.7.2'
+# set :rbenv_ruby_dir,  '/home/ubuntu/.rbenv/versions/2.7.2'
 set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
 
 # If using Digital Ocean's Ruby on Rails Marketplace framework, your username is 'rails'
