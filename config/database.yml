@@ -48,11 +48,11 @@
 
 default: &default
   adapter: postgresql
-  # host: postgres
+  host: 127.0.0.1
   # encoding: utf8
   pool: 5
-  # username: root
-  # password: password
+  username: root
+  password: password
   # reconnect: false
   timeout: 5000
 
@@ -67,5 +67,5 @@ test:
 production:
   <<: *default
   database: shop
-  username: postgres
-  password: root
+  username: root
+  password: password

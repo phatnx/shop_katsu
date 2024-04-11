@@ -37,8 +37,10 @@ install_plugin Capistrano::Puma
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
 # require "capistrano/bundler"
-# require "capistrano/rails/assets"
-# require "capistrano/rails/migrations"
+require "capistrano/rails/assets"
+require "capistrano/rails/migrations"
+require 'capistrano/yarn'
+
 # require "capistrano/passenger"
 
 install_plugin Capistrano::Puma::Daemon
