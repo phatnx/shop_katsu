@@ -48,7 +48,7 @@
 
 default: &default
   adapter: postgresql
-  host: 127.0.0.1
+  # host: 127.0.0.1
   # encoding: utf8
   pool: 5
   username: root
@@ -67,5 +67,5 @@ test:
 production:
   <<: *default
   database: shop
-  username: root
-  password: password
+  username: posgres
+  password: root
