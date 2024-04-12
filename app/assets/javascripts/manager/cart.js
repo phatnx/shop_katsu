@@ -22,8 +22,7 @@ function Cart(options) {
     shopping_carts = localStorage.getItem("carts")
       ? JSON.parse(localStorage.getItem("carts"))
       : [];
-    $("#lblCartCount").get(0).innerText =
-      shopping_carts?.length > 0 ? shopping_carts.length : "";
+    $("#lblCartCount").get(0).innerText = shopping_carts && shopping_carts.length > 0 ? shopping_carts.length : "";
   };
   module.addToCart = function () {
     let shopping_carts = [];
