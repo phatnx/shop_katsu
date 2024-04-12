@@ -1,18 +1,18 @@
   INFO ---------------------------------------------------------------------------
-  INFO START 2024-04-12 16:16:06 +0700 cap production deploy
+  INFO START 2024-04-12 16:20:10 +0700 cap production deploy
   INFO ---------------------------------------------------------------------------
- DEBUG [95644f9c] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
- DEBUG [95644f9c] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
- DEBUG [95644f9c] Finished in 3.863 seconds with exit status 0 (successful).
-  INFO [4712503a] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
- DEBUG [4712503a] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
-  INFO [4712503a] Finished in 0.881 seconds with exit status 0 (successful).
-  INFO [25126e44] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
- DEBUG [25126e44] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
-  INFO [25126e44] Finished in 0.927 seconds with exit status 0 (successful).
-  INFO [0f985bcd] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
- DEBUG [0f985bcd] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
- DEBUG [0f985bcd] 	mkdir: 
- DEBUG [0f985bcd] 	cannot create directory '/tmp'
- DEBUG [0f985bcd] 	: Permission denied
- DEBUG [0f985bcd] 	
+ DEBUG [f386599e] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
+ DEBUG [f386599e] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+ DEBUG [f386599e] Finished in 3.860 seconds with exit status 0 (successful).
+  INFO [bcf22d4c] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
+ DEBUG [bcf22d4c] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
+  INFO [bcf22d4c] Finished in 1.393 seconds with exit status 0 (successful).
+  INFO [87e56b1f] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
+ DEBUG [87e56b1f] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
+  INFO [87e56b1f] Finished in 0.917 seconds with exit status 0 (successful).
+  INFO [1a40f544] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
+ DEBUG [1a40f544] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
+ DEBUG [1a40f544] 	mkdir: 
+ DEBUG [1a40f544] 	cannot create directory '/tmp'
+ DEBUG [1a40f544] 	: Permission denied
+ DEBUG [1a40f544] 	
