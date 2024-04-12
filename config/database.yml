@@ -51,8 +51,8 @@ default: &default
   # host: 127.0.0.1
   # encoding: utf8
   pool: 5
-  username: root
-  password: password
+  username: posgres
+  password: root
   # reconnect: false
   timeout: 5000
 
