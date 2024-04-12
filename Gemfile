@@ -3,14 +3,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 4.3.9' #'~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -96,8 +96,8 @@ gem 'sitemap_generator'
 gem 'uglifier', '>= 1.0.3', require: 'uglifier'
 gem 'figaro'
 group :development do
-  gem 'capistrano'
-  gem 'capistrano3-puma'
+  gem 'capistrano', require: false
+  gem 'capistrano3-puma', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rbenv', require: false
