@@ -51,7 +51,7 @@ default: &default
   # host: 127.0.0.1
   # encoding: utf8
   pool: 5
-  username: posgres
+  username: postgres
   password: root
   # reconnect: false
   timeout: 5000
@@ -67,5 +67,5 @@ test:
 production:
   <<: *default
   database: shop
-  username: posgres
+  username: postgres
   password: root
