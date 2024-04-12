@@ -120,14 +120,14 @@ function Cart(options) {
       }
       if (carts && carts.length) {
         if (isNaN(shipping)) {
-            $(".totalOrder").parent().css("display", "none");
-            $(".shipping-cost").css("display", "none");
+          $(".totalOrder").parent().css("display", "none");
+          $(".shipping-cost").css("display", "none");
         }
         $(".totalOrder").get(0).innerText = "$" + parseFloat(shipping + getTotal()).toFixed(2);
         $("#lblCartCount").get(0).innerText = shopping_carts.length;
         $(".price_shipping").get(0).innerText = "$" + shipping;
-    }
-    
+      }
+
     }
   };
   module.incrementCart = function () {
@@ -316,8 +316,7 @@ function Cart(options) {
 
         setCart(shopping_carts);
         $(el).remove();
-        $("#lblCartCount").get(0).innerText =
-          shopping_carts?.length > 0 ? shopping_carts.length : "";
+        $("#lblCartCount").get(0).innerText = shopping_carts && shopping_carts.length > 0 ? shopping_carts.length : "";
         $(".Cart_Sub_Total").get(0).innerText = "$" + getTotal();
         $(".totalOrder").get(0).innerText =
           "$" + parseFloat(shipping + getTotal());
