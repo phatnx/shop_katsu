@@ -1,42 +1,664 @@
   INFO ---------------------------------------------------------------------------
-  INFO START 2024-04-12 16:21:32 +0700 cap production deploy:intial
+  INFO START 2024-04-12 16:44:24 +0700 cap production deploy:initial
   INFO ---------------------------------------------------------------------------
- DEBUG [09b4ee7a] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
- DEBUG [09b4ee7a] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
- DEBUG [09b4ee7a] Finished in 3.830 seconds with exit status 0 (successful).
-  INFO ---------------------------------------------------------------------------
-  INFO START 2024-04-12 16:21:46 +0700 cap production deploy:initial
-  INFO ---------------------------------------------------------------------------
- DEBUG [7cce2456] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
- DEBUG [7cce2456] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
- DEBUG [7cce2456] Finished in 3.773 seconds with exit status 0 (successful).
-  INFO [200fe519] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
- DEBUG [200fe519] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
-  INFO [200fe519] Finished in 0.878 seconds with exit status 0 (successful).
-  INFO [043e11ec] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
- DEBUG [043e11ec] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
-  INFO [043e11ec] Finished in 0.922 seconds with exit status 0 (successful).
-  INFO [2f71d206] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
- DEBUG [2f71d206] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
- DEBUG [2f71d206] 	mkdir: 
- DEBUG [2f71d206] 	cannot create directory '/tmp'
- DEBUG [2f71d206] 	: Permission denied
- DEBUG [2f71d206] 	
-  INFO ---------------------------------------------------------------------------
-  INFO START 2024-04-12 16:27:47 +0700 cap production deploy:initial
-  INFO ---------------------------------------------------------------------------
- DEBUG [1ec0b729] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
- DEBUG [1ec0b729] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
- DEBUG [1ec0b729] Finished in 3.583 seconds with exit status 0 (successful).
-  INFO [3ce0e442] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
- DEBUG [3ce0e442] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
-  INFO [3ce0e442] Finished in 1.023 seconds with exit status 0 (successful).
-  INFO [d7bebddd] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
- DEBUG [d7bebddd] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
-  INFO [d7bebddd] Finished in 0.901 seconds with exit status 0 (successful).
-  INFO [3622cf8f] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
- DEBUG [3622cf8f] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
- DEBUG [3622cf8f] 	mkdir: 
- DEBUG [3622cf8f] 	cannot create directory '/tmp'
- DEBUG [3622cf8f] 	: Permission denied
- DEBUG [3622cf8f] 	
+ DEBUG [b3fa30da] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
+ DEBUG [b3fa30da] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+ DEBUG [b3fa30da] Finished in 3.871 seconds with exit status 0 (successful).
+  INFO [c9d069d3] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
+ DEBUG [c9d069d3] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
+  INFO [c9d069d3] Finished in 0.893 seconds with exit status 0 (successful).
+  INFO [7a0bf265] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
+ DEBUG [7a0bf265] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
+  INFO [7a0bf265] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [cd9bd470] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
+ DEBUG [cd9bd470] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [cd9bd470] Finished in 0.852 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-32d8c6dab69ac107ce2c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-32d8c6dab69ac107ce2c.sh 100.0%
+  INFO [0bd59630] Running /usr/bin/env chmod 700 /tmp/git-ssh-32d8c6dab69ac107ce2c.sh on 54.89.240.243
+ DEBUG [0bd59630] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-32d8c6dab69ac107ce2c.sh )
+  INFO [0bd59630] Finished in 0.931 seconds with exit status 0 (successful).
+  INFO [9a25f10a] Running /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD on 54.89.240.243
+ DEBUG [9a25f10a] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD )
+ DEBUG [9a25f10a] 	1844be74445358378fecef5d6d519cd9c30d88d1
+ DEBUG [9a25f10a] 		HEAD
+  INFO [9a25f10a] Finished in 1.694 seconds with exit status 0 (successful).
+  INFO [a3954b6a] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases on 54.89.240.243
+ DEBUG [a3954b6a] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases )
+  INFO [a3954b6a] Finished in 0.682 seconds with exit status 0 (successful).
+  INFO [3d2cdaf6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets on 54.89.240.243
+ DEBUG [3d2cdaf6] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets )
+  INFO [3d2cdaf6] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [af8c227e] Running [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ] on 54.89.240.243
+ DEBUG [af8c227e] Command: [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ]
+ DEBUG [af8c227e] Finished in 0.924 seconds with exit status 0 (successful).
+ DEBUG [ddb8ceba] Running [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ] on 54.89.240.243
+ DEBUG [ddb8ceba] Command: [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ]
+ DEBUG [ddb8ceba] Finished in 0.919 seconds with exit status 1 (failed).
+ DEBUG [d52d6c6d] Running [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ] on 54.89.240.243
+ DEBUG [d52d6c6d] Command: [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ]
+ DEBUG [d52d6c6d] Finished in 0.860 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/shop_katsu/repo
+ DEBUG [5254c909] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [5254c909] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [5254c909] Finished in 0.862 seconds with exit status 0 (successful).
+  INFO [ae917456] Running /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git on 54.89.240.243
+ DEBUG [ae917456] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git )
+  INFO [ae917456] Finished in 0.939 seconds with exit status 0 (successful).
+  INFO [a01cb0f6] Running /usr/bin/env git remote update --prune on 54.89.240.243
+ DEBUG [a01cb0f6] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a01cb0f6] 	Fetching origin
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	remote: Enumerating objects: 4388, done.[K
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	remote: Counting objects:   0% (1/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   1% (44/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   2% (88/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   3% (132/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   4% (176/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   5% (220/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   6% (264/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   7% (308/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   8% (352/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:   9% (395/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  10% (439/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  11% (483/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  12% (527/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  13% (571/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  14% (615/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  15% (659/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  16% (703/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  17% (746/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  18% (790/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  19% (834/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  20% (878/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  21% (922/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  22% (966/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  23% (1010/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  24% (1054/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  25% (1097/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  26% (1141/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  27% (1185/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  28% (1229/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  29% (1273/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  30% (1317/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  31% (1361/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  32% (1405/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  33% (1449/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  34% (1492/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  35% (1536/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  36% (1580/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  37% (1624/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  38% (1668/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  39% (1712/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  40% (1756/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  41% (1800/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  42% (1843/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  43% (1887/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  44% (1931/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  45% (1975/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  46% (2019/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  47% (2063/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  48% (2107/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  49% (2151/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  50% (2194/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  51% (2238/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  52% (2282/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  53% (2326/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  54% (2370/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  55% (2414/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  56% (2458/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  57% (2502/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  58% (2546/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  59% (2589/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  60% (2633/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  61% (2677/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  62% (2721/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  63% (2765/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  64% (2809/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  65% (2853/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  66% (2897/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  67% (2940/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  68% (2984/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  69% (3028/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  70% (3072/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  71% (3116/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  72% (3160/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  73% (3204/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  74% (3248/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  75% (3291/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  76% (3335/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  77% (3379/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  78% (3423/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  79% (3467/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  80% (3511/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  81% (3555/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  82% (3599/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  83% (3643/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  84% (3686/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  85% (3730/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  86% (3774/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  87% (3818/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  88% (3862/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  89% (3906/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  90% (3950/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  91% (3994/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  92% (4037/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  93% (4081/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  94% (4125/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  95% (4169/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  96% (4213/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  97% (4257/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  98% (4301/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects:  99% (4345/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects: 100% (4388/4388)[K
+ DEBUG [a01cb0f6] 	remote: Counting objects: 100% (4388/4388), done.[K
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   0% (1/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   1% (44/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   2% (88/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   3% (131/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   4% (175/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   5% (218/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   6% (262/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   7% (305/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   8% (349/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:   9% (392/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  10% (436/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  11% (480/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  12% (523/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  13% (567/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  14% (610/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  15% (654/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  16% (697/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  17% (741/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  18% (784/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  19% (828/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  20% (871/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  21% (915/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  22% (959/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  23% (1002/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  24% (1046/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  25% (1089/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  26% (1133/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  27% (1176/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  28% (1220/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  29% (1263/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  30% (1307/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  31% (1351/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  32% (1394/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  33% (1438/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  34% (1481/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  35% (1525/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  36% (1568/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  37% (1612/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  38% (1655/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  39% (1699/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  40% (1742/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  41% (1786/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  42% (1830/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  43% (1873/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  44% (1917/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  45% (1960/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  46% (2004/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  47% (2047/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  48% (2091/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  49% (2134/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  50% (2178/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  51% (2222/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  52% (2265/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  53% (2309/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  54% (2352/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  55% (2396/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  56% (2439/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  57% (2483/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  58% (2526/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  59% (2570/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  60% (2613/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  61% (2657/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  62% (2701/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  63% (2744/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  64% (2788/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  65% (2831/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  66% (2875/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  67% (2918/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  68% (2962/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  69% (3005/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  70% (3049/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  71% (3093/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  72% (3136/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  73% (3180/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  74% (3223/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  75% (3267/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  76% (3310/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  77% (3354/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  78% (3397/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  79% (3441/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  80% (3484/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  81% (3528/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  82% (3572/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  83% (3615/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  84% (3659/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  85% (3702/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  86% (3746/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  87% (3789/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  88% (3833/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  89% (3876/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  90% (3920/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  91% (3964/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  92% (4007/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  93% (4051/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  94% (4094/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  95% (4138/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  96% (4181/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  97% (4225/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  98% (4268/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects:  99% (4312/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects: 100% (4355/4355)[K
+ DEBUG [a01cb0f6] 	remote: Compressing objects: 100% (4355/4355), done.[K
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	Receiving objects:   0% (1/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   1% (44/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   2% (88/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   3% (132/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   4% (176/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   5% (220/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   6% (264/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   7% (307/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   8% (351/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:   9% (395/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  10% (439/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  11% (483/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  12% (527/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  13% (571/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  14% (614/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  15% (658/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  16% (702/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  17% (746/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  18% (790/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  19% (834/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  20% (877/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  21% (921/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  22% (965/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  23% (1009/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  24% (1053/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  25% (1097/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  26% (1141/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  27% (1184/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  28% (1228/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  29% (1272/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  30% (1316/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  31% (1360/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  32% (1404/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  33% (1448/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  34% (1491/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  35% (1535/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  36% (1579/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  37% (1623/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  38% (1667/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  39% (1711/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  40% (1754/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  41% (1798/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  42% (1842/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  43% (1886/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  44% (1930/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  45% (1974/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  46% (2018/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  47% (2061/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  48% (2105/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  49% (2149/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  50% (2193/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  51% (2237/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  52% (2281/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  53% (2325/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  54% (2368/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  55% (2412/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  56% (2456/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  57% (2500/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  58% (2544/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  59% (2588/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  60% (2631/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  61% (2675/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  62% (2719/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  63% (2763/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  64% (2807/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  65% (2851/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  66% (2895/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  67% (2938/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  68% (2982/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  69% (3026/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  70% (3070/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  71% (3114/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  72% (3158/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  73% (3202/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  74% (3245/4385)
+ DEBUG [a01cb0f6] 	Receiving objects:  75% (3289/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  76% (3333/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  77% (3377/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  78% (3421/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  79% (3465/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  80% (3508/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  81% (3552/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  82% (3596/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  83% (3640/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  84% (3684/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  85% (3728/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  86% (3772/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  87% (3815/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  88% (3859/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  89% (3903/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  90% (3947/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  91% (3991/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  92% (4035/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  93% (4079/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  94% (4122/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  95% (4166/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  96% (4210/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  97% (4254/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  98% (4298/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects:  99% (4342/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	remote: Total 4385 (delta 31), reused 4381 (delta 27), pack-reused 0[K
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	Receiving objects: 100% (4385/4385), 6.83 MiB | 13.57 MiB/s
+ DEBUG [a01cb0f6] 	Receiving objects: 100% (4385/4385), 9.29 MiB | 15.26 MiB/s, done.
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	Resolving deltas:   0% (0/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:   6% (2/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:   9% (3/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  12% (4/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  16% (5/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  19% (6/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  22% (7/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  25% (8/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  32% (10/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  35% (11/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  38% (12/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  41% (13/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  45% (14/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  48% (15/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  51% (16/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  54% (17/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  58% (18/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  61% (19/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  64% (20/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  67% (21/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  70% (22/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  74% (23/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  77% (24/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  80% (25/31)
+ DEBUG [a01cb0f6] 	Resolving deltas:  90% (28/31)
+ DEBUG [a01cb0f6] 	Resolving deltas: 100% (31/31)
+ DEBUG [a01cb0f6] 	Resolving deltas: 100% (31/31), completed with 2 local objects.
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	From github.com:phatnx/shop_katsu
+ DEBUG [a01cb0f6] 	
+ DEBUG [a01cb0f6] 	   3c49852f..3eee7cc8  master     -> master
+ DEBUG [a01cb0f6] 	
+  INFO [a01cb0f6] Finished in 2.466 seconds with exit status 0 (successful).
+ DEBUG [767f0278] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [767f0278] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [767f0278] Finished in 0.911 seconds with exit status 0 (successful).
+  INFO [a9e5d74e] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240412094439 on 54.89.240.243
+ DEBUG [a9e5d74e] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240412094439 )
+  INFO [a9e5d74e] Finished in 0.917 seconds with exit status 0 (successful).
+  INFO [e14078ae] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240412094439 on 54.89.240.243
+ DEBUG [e14078ae] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240412094439 )
+  INFO [e14078ae] Finished in 1.225 seconds with exit status 0 (successful).
+ DEBUG [fd6da57c] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [fd6da57c] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [fd6da57c] Finished in 0.862 seconds with exit status 0 (successful).
+ DEBUG [f65594c2] Running /usr/bin/env git rev-list --max-count=1 master on 54.89.240.243
+ DEBUG [f65594c2] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-32d8c6dab69ac107ce2c.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [f65594c2] 	3eee7cc82ef88219363eccad65af2fe94e4c8447
+ DEBUG [f65594c2] 	
+ DEBUG [f65594c2] Finished in 0.867 seconds with exit status 0 (successful).
+ DEBUG [55bfd755] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [55bfd755] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi
+ DEBUG [55bfd755] Finished in 1.037 seconds with exit status 0 (successful).
+  INFO [10542795] Running /usr/bin/env echo "3eee7cc82ef88219363eccad65af2fe94e4c8447" > REVISION on 54.89.240.243
+ DEBUG [10542795] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env echo "3eee7cc82ef88219363eccad65af2fe94e4c8447" > REVISION )
+  INFO [10542795] Finished in 0.921 seconds with exit status 0 (successful).
+  INFO [597aa3b5] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240412094439/public on 54.89.240.243
+ DEBUG [597aa3b5] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240412094439/public )
+  INFO [597aa3b5] Finished in 1.018 seconds with exit status 0 (successful).
+ DEBUG [ec3fa1a9] Running [ -L /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets ] on 54.89.240.243
+ DEBUG [ec3fa1a9] Command: [ -L /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets ]
+ DEBUG [ec3fa1a9] Finished in 0.992 seconds with exit status 1 (failed).
+ DEBUG [816d8fe7] Running [ -d /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets ] on 54.89.240.243
+ DEBUG [816d8fe7] Command: [ -d /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets ]
+ DEBUG [816d8fe7] Finished in 0.863 seconds with exit status 0 (successful).
+  INFO [9f018ec7] Running /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets on 54.89.240.243
+ DEBUG [9f018ec7] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets )
+  INFO [9f018ec7] Finished in 0.936 seconds with exit status 0 (successful).
+  INFO [a0769307] Running /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets on 54.89.240.243
+ DEBUG [a0769307] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240412094439/public/assets )
+  INFO [a0769307] Finished in 0.993 seconds with exit status 0 (successful).
+ DEBUG [15c544fe] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [15c544fe] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi
+ DEBUG [15c544fe] Finished in 0.890 seconds with exit status 0 (successful).
+  INFO [52304a63] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true on 54.89.240.243
+ DEBUG [52304a63] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [52304a63] Finished in 1.322 seconds with exit status 0 (successful).
+  INFO [b14907fb] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle on 54.89.240.243
+ DEBUG [b14907fb] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle )
+  INFO [b14907fb] Finished in 1.137 seconds with exit status 0 (successful).
+  INFO [0d2e194e] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test on 54.89.240.243
+ DEBUG [0d2e194e] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [0d2e194e] Finished in 1.120 seconds with exit status 0 (successful).
+ DEBUG [6a478452] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [6a478452] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi
+ DEBUG [6a478452] Finished in 0.979 seconds with exit status 0 (successful).
+ DEBUG [b8e1d965] Running $HOME/.rbenv/bin/rbenv exec bundle check on 54.89.240.243
+ DEBUG [b8e1d965] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [b8e1d965] 	[33mWarning: the running version of Bundler (2.2.3) is older than the version that created the lockfile (2.2.24). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.2.24`.
+ DEBUG [b8e1d965] 	
+ DEBUG [b8e1d965] 	[0m
+ DEBUG [b8e1d965] 	The Gemfile's dependencies are satisfied
+ DEBUG [b8e1d965] 	
+ DEBUG [b8e1d965] Finished in 2.346 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [9f0d3b0a] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi on 54.89.240.243
+ DEBUG [9f0d3b0a] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240412094439; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240412094439'" 1>&2; false; fi
+ DEBUG [9f0d3b0a] Finished in 0.863 seconds with exit status 0 (successful).
+  INFO [9efcd5a7] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile on 54.89.240.243
+ DEBUG [9efcd5a7] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240412094439 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[1myarn install v1.22.19[22m
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[33mwarning[39m package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[2m[1/4][22m Resolving packages...
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	⠁ 
+ DEBUG [9efcd5a7] 	[0K
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[2m[2/4][22m Fetching packages...
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	[2m[3/4][22m Linking dependencies...
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	[2K[1G[2m[4/4][22m Building fresh packages...
+ DEBUG [9efcd5a7] 	[2K
+ DEBUG [9efcd5a7] 	[1G
+ DEBUG [9efcd5a7] 	Done in 8.37s.
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	W, [2024-04-12T09:45:30.425473 #78450]  WARN -- : Removed sourceMappingURL comment for missing asset 'rails_admin/jquery-migrate.min.map' from /home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/rails_admin-2.2.1/app/assets/javascripts/rails_admin/jquery.migrate.js
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	W, [2024-04-12T09:45:36.140394 #78450]  WARN -- : Removed sourceMappingURL comment for missing asset './chartkick.min.js.map' from /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/assets/javascripts/chartkick.min.js
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	W, [2024-04-12T09:46:14.443521 #78450]  WARN -- : Removed sourceMappingURL comment for missing asset 'jquery.zoomtoo.js.map' from /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/assets/javascripts/jquery.zoomtoo.js
+ DEBUG [9efcd5a7] 	W, [2024-04-12T09:46:15.153735 #78450]  WARN -- : Removed sourceMappingURL comment for missing asset 'lightbox.min.map' from /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/assets/javascripts/lightbox.min.js
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	Compiling...
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	Compilation failed:
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	Browserslist: caniuse-lite is outdated. Please run:
+ DEBUG [9efcd5a7] 	
+ DEBUG [9efcd5a7] 	  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ModuleNotFoundError: Module not found: Error: Can't resolve 'js-cookie' in '/home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/packs'
+    at factory.create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/webpack/lib/Compilation.js:925:10)
+ DEBUG [9efcd5a7] 	
+    at factory (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/webpack/lib/NormalModuleFactory.js:401:22)
+    at resolver (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/webpack/lib/NormalModuleFactory.js:130:21)
+    at asyncLib.parallel (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/webpack/lib/NormalModuleFactory.js:224:22)
+    at /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/neo-async/async.js:2830:7
+    at /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/neo-async/async.js:6877:13
+    at normalResolver.resolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/webpack/lib/NormalModuleFactory.js:214:25)
+    at doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:213:14)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at resolver.doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:44:7)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+    at resolver.doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:67:43)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+ DEBUG [9efcd5a7] 	    at _fn41 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:43:1)
+    at resolver.doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/ModuleKindPlugin.js:30:40)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn1 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+    at args (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/forEachBail.js:30:14)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at resolver.doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:44:7)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn0 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+    at resolver.doResolve (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:67:43)
+    at hook.callAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/Resolver.js:285:5)
+    at _fn43 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+    at resolver.getHook.tapAsync (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/enhanced-resolve/lib/RootPlugin.js:37:38)
+    at _next42 (eval at create (/home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:8:1)
+resolve 'js-cookie' in '/home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/packs'
+  Parsed request is a module
+  using description file: /home/ubuntu/apps/shop_katsu/releases/20240412094439/package.json (relative path: ./app/javascript/packs)
+    Field 'browser' doesn't contain a valid alias configuration
+ DEBUG [9efcd5a7] 	
+    resolve as module
+      looking for modules in /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript
+        using description file: /home/ubuntu/apps/shop_katsu/releases/20240412094439/package.json (relative path: ./app/javascript)
+          Field 'browser' doesn't contain a valid alias configuration
+          using description file: /home/ubuntu/apps/shop_katsu/releases/20240412094439/package.json (relative path: ./app/javascript/js-cookie)
+            no extension
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie doesn't exist
+            .mjs
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.mjs doesn't exist
+            .js
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.js doesn't exist
+            .sass
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.sass doesn't exist
+            .scss
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.scss doesn't exist
+ DEBUG [9efcd5a7] 	
+            .css
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.css doesn't exist
+            .module.sass
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.module.sass doesn't exist
+            .module.scss
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.module.scss doesn't exist
+            .module.css
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.module.css doesn't exist
+ DEBUG [9efcd5a7] 	            .png
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.png doesn't exist
+            .svg
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.svg doesn't exist
+            .gif
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.gif doesn't exist
+            .jpeg
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.jpeg doesn't exist
+ DEBUG [9efcd5a7] 	
+            .jpg
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie.jpg doesn't exist
+            as directory
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/js-cookie doesn't exist
+      /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/packs/node_modules doesn't exist or is not a directory
+      /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/javascript/node_modules doesn't exist or is not a directory
+      /home/ubuntu/apps/shop_katsu/releases/20240412094439/app/node_modules doesn't exist or is not a directory
+      /home/ubuntu/apps/shop_katsu/releases/node_modules doesn't exist or is not a directory
+ DEBUG [9efcd5a7] 	      /home/ubuntu/apps/shop_katsu/node_modules doesn't exist or is not a directory
+      /home/ubuntu/apps/node_modules doesn't exist or is not a directory
+      /home/ubuntu/node_modules doesn't exist or is not a directory
+      /home/node_modules doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+      looking for modules in /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules
+        using description file: /home/ubuntu/apps/shop_katsu/releases/20240412094439/package.json (relative path: ./node_modules)
+          Field 'browser' doesn't contain a valid alias configuration
+          using description file: /home/ubuntu/apps/shop_katsu/releases/20240412094439/package.json (relative path: ./node_modules/js-cookie)
+ DEBUG [9efcd5a7] 	
+            no extension
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie doesn't exist
+            .mjs
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.mjs doesn't exist
+            .js
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.js doesn't exist
+            .sass
+ DEBUG [9efcd5a7] 	
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.sass doesn't exist
+            .scss
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.scss doesn't exist
+            .css
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.css doesn't exist
+            .module.sass
+ DEBUG [9efcd5a7] 	
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.module.sass doesn't exist
+            .module.scss
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.module.scss doesn't exist
+            .module.css
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.module.css doesn't exist
+            .png
+ DEBUG [9efcd5a7] 	              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.png doesn't exist
+            .svg
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.svg doesn't exist
+            .gif
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.gif doesn't exist
+            .jpeg
+ DEBUG [9efcd5a7] 	              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.jpeg doesn't exist
+            .jpg
+              Field 'browser' doesn't contain a valid alias configuration
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie.jpg doesn't exist
+            as directory
+              /home/ubuntu/apps/shop_katsu/releases/20240412094439/node_modules/js-cookie doesn't exist
+

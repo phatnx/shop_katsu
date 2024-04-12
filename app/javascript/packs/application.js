@@ -17,7 +17,7 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-window.Cookies = require("js-cookie")
+// window.Cookies = require("js-cookie")
 window.Handlebars = require("handlebars")
 require("trix")
 require("@rails/actiontext")
