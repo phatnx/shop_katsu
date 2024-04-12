@@ -1,5 +1,6 @@
 # Change these
 # server '100.26.47.209', port: 22, roles: [:web, :app, :db], primary: true
+require "bundler/capistrano"
 
 server '54.89.240.243', port: 22, roles: [:web, :app, :db], primary: true
 
