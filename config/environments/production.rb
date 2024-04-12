@@ -123,7 +123,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'shopmrkatsu.herokuapp.com' }
   config.serve_static_assets = true
   config.assets.compile = true
-  config.assets.js_compressor = :uglifier
+  config.assets.js_compressor = Uglifier.new(harmony: true)
   config.assets.digest = true
 
   config.action_mailer.smtp_settings = {
