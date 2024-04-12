@@ -11,7 +11,7 @@ import * as ActiveStorage from "@rails/activestorage"
 
 require("trix")
 require("@rails/actiontext")
-import "../trix-editor-overrides"
+// import "../trix-editor-overrides"
 import "channels"
 
 Rails.start()
