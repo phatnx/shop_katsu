@@ -113,9 +113,11 @@ function Cart(options) {
         })
       );
       $(".Cart_Sub_Total").get(0).innerText = "$" + getTotal();
-      carts?.length > 0
-        ? $(".check_out").css("display", "block")
-        : $(".check_out").css("display", "none");
+      if (carts && carts.length > 0) {
+        $(".check_out").css("display", "block");
+      } else {
+        $(".check_out").css("display", "none");
+      }
       if (carts?.length) {
         if (isNaN(shipping)) {
           $(".totalOrder").parent().css("display", "none");
@@ -326,9 +328,9 @@ function Cart(options) {
   check_i18n = function () {
     return true
       ? window.location.pathname.substr(
-          window.location.pathname.indexOf("/en"),
-          (2, 3)
-        ) === "/en"
+        window.location.pathname.indexOf("/en"),
+        (2, 3)
+      ) === "/en"
       : false;
   };
 
@@ -573,7 +575,7 @@ function Cart(options) {
               });
             }
           },
-          error: function () {},
+          error: function () { },
         });
       });
   };
@@ -623,7 +625,7 @@ function Cart(options) {
               });
             }
           },
-          error: function () {},
+          error: function () { },
         });
       });
     };
