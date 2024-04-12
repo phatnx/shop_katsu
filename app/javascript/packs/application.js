@@ -12,7 +12,7 @@ import * as ActiveStorage from "@rails/activestorage"
 require("trix")
 require("@rails/actiontext")
 // import "../trix-editor-overrides"
-import "channels"
+// import "channels"
 
 Rails.start()
 Turbolinks.start()
