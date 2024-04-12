@@ -1,0 +1,17 @@
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-12 15:17:47 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [95cb8f39] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
+ DEBUG [95cb8f39] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+ DEBUG [95cb8f39] Finished in 4.916 seconds with exit status 0 (successful).
+  INFO [b9d6ce48] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.89.240.243
+ DEBUG [b9d6ce48] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
+  INFO [b9d6ce48] Finished in 0.889 seconds with exit status 0 (successful).
+  INFO [3a74a6ab] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.89.240.243
+ DEBUG [3a74a6ab] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
+  INFO [3a74a6ab] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [4e8e2dee] Running /usr/bin/env mkdir -p /tmp on 54.89.240.243
+ DEBUG [4e8e2dee] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [4e8e2dee] Finished in 0.856 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b1ecf09554001fe7f324.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b1ecf09554001fe7f324.sh 100.0%
