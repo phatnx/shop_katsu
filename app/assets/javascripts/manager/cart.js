@@ -118,16 +118,16 @@ function Cart(options) {
       } else {
         $(".check_out").css("display", "none");
       }
-      if (carts?.length) {
+      if (carts && carts.length) {
         if (isNaN(shipping)) {
-          $(".totalOrder").parent().css("display", "none");
-          $(".shipping-cost").css("display", "none");
+            $(".totalOrder").parent().css("display", "none");
+            $(".shipping-cost").css("display", "none");
         }
-        $(".totalOrder").get(0).innerText =
-          "$" + parseFloat(shipping + getTotal()).toFixed(2);
+        $(".totalOrder").get(0).innerText = "$" + parseFloat(shipping + getTotal()).toFixed(2);
         $("#lblCartCount").get(0).innerText = shopping_carts.length;
         $(".price_shipping").get(0).innerText = "$" + shipping;
-      }
+    }
+    
     }
   };
   module.incrementCart = function () {
