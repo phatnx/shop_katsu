@@ -1,0 +1,10 @@
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-13 10:51:33 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6e538f5a] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
+ DEBUG [6e538f5a] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-13 10:54:52 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f8770d8e] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.89.240.243
+ DEBUG [f8770d8e] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
