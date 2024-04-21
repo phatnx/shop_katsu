@@ -30,12 +30,12 @@ Brand.create!([
               ])
 
 User.create!([
-              #  { email: 'testadmin@mvmanor.co.uk', username: 'test', mobile: '12345678910', city_id: 1, gender: 'female',
-              #    encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: true },
-              #  { email: 'testuser@mvmanor.co.uk', username: 'test', mobile: '12345678910', city_id: 2, gender: 'female',
-              #    encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: false },
-              #  { email: 'testcustomer@customer.co.uk', username: 'test', mobile: '12345678910', city_id: 1, gender: 'female',
-              #    encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: false }
+               { email: 'testadmin@mvmanor.co.uk', username: 'test', mobile: '12345678910', city_id: 1, gender: 'female',
+                 encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: true },
+               { email: 'testuser@mvmanor.co.uk', username: 'test', mobile: '12345678910', city_id: 2, gender: 'female',
+                 encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: false },
+               { email: 'testcustomer@customer.co.uk', username: 'test', mobile: '12345678910', city_id: 1, gender: 'female',
+                 encrypted_password: '#$taawktljasktlw4aaglj', password: 'Thang%%%123', password_confirmation: 'Thang%%%123', reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, admin: false }
              ])
 
 Category.create!([
