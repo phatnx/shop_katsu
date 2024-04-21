@@ -56,8 +56,8 @@ append :rbenv_map_bins, 'puma', 'pumactl'
 #   before 'deploy:starting', 'puma:make_dirs'
 # end
 
-# namespace :deploy do
-#   desc "Make sure local git is in sync with remote."
+namespace :deploy do
+  desc "Make sure local git is in sync with remote."
   # task :check_revision do
   #   on roles(:app) do
 
@@ -70,9 +70,9 @@ append :rbenv_map_bins, 'puma', 'pumactl'
   #   end
   # end
 
-  # task :seed do
-  #   run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
-  # end
+  task :seed do
+    run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
+  end
 
   # desc 'Initial Deploy'
   # task :initial do
@@ -93,7 +93,7 @@ append :rbenv_map_bins, 'puma', 'pumactl'
   # after  :finishing,    :compile_assets
   # after  :finishing,    :cleanup
   # after  :finishing,    :restart
-# end
+end
 
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
