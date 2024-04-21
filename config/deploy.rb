@@ -1,7 +1,7 @@
 # Change these
 # server '100.26.47.209', port: 22, roles: [:web, :app, :db], primary: true
 
-server '54.235.160.224222', port: 22, roles: [:web, :app, :db], primary: true
+server '54.235.160.224', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:phatnx/shop_katsu.git'
 set :application,     'shop_katsu'
