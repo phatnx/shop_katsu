@@ -317,3 +317,562 @@ For more info visit https://webpack.js.org/guides/code-splitting/
  DEBUG [b19ecf57] 	* Daemonizing...
  DEBUG [b19ecf57] 	
   INFO [b19ecf57] Finished in 2.562 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-22 10:24:15 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b13c099a] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.235.160.224
+ DEBUG [b13c099a] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+ DEBUG [b13c099a] Finished in 4.566 seconds with exit status 0 (successful).
+  INFO [549f5dcf] Running /usr/bin/env mkdir -p /tmp on 54.235.160.224
+ DEBUG [549f5dcf] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [549f5dcf] Finished in 0.780 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ef51daa07bdcd12e2c81.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ef51daa07bdcd12e2c81.sh 100.0%
+  INFO [afe80ac1] Running /usr/bin/env chmod 700 /tmp/git-ssh-ef51daa07bdcd12e2c81.sh on 54.235.160.224
+ DEBUG [afe80ac1] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-ef51daa07bdcd12e2c81.sh )
+  INFO [afe80ac1] Finished in 0.783 seconds with exit status 0 (successful).
+  INFO [afd7a675] Running /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD on 54.235.160.224
+ DEBUG [afd7a675] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD )
+ DEBUG [afd7a675] 	1844be74445358378fecef5d6d519cd9c30d88d1
+ DEBUG [afd7a675] 		
+ DEBUG [afd7a675] 	HEAD
+  INFO [afd7a675] Finished in 1.548 seconds with exit status 0 (successful).
+  INFO [5b5ef59b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases on 54.235.160.224
+ DEBUG [5b5ef59b] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases )
+  INFO [5b5ef59b] Finished in 0.658 seconds with exit status 0 (successful).
+  INFO [51d4fbfa] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets on 54.235.160.224
+ DEBUG [51d4fbfa] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets )
+  INFO [51d4fbfa] Finished in 0.781 seconds with exit status 0 (successful).
+ DEBUG [bbab2446] Running [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ] on 54.235.160.224
+ DEBUG [bbab2446] Command: [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ]
+ DEBUG [bbab2446] Finished in 0.807 seconds with exit status 0 (successful).
+ DEBUG [7f3e4a8b] Running [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ] on 54.235.160.224
+ DEBUG [7f3e4a8b] Command: [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ]
+ DEBUG [7f3e4a8b] Finished in 0.943 seconds with exit status 0 (successful).
+ DEBUG [48d3351b] Running /usr/bin/env cat /home/ubuntu/apps/shop_katsu/current/REVISION 2>/dev/null on 54.235.160.224
+ DEBUG [48d3351b] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env cat /home/ubuntu/apps/shop_katsu/current/REVISION 2>/dev/null )
+ DEBUG [48d3351b] 	dc14ada2c093b7576d2a092a852a0b8fb541c143
+ DEBUG [48d3351b] 	
+ DEBUG [48d3351b] Finished in 0.869 seconds with exit status 0 (successful).
+ DEBUG [1f42a751] Running [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ] on 54.235.160.224
+ DEBUG [1f42a751] Command: [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ]
+ DEBUG [1f42a751] Finished in 0.777 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/shop_katsu/repo
+ DEBUG [1c84ab76] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [1c84ab76] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [1c84ab76] Finished in 0.854 seconds with exit status 0 (successful).
+  INFO [d1e4669d] Running /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git on 54.235.160.224
+ DEBUG [d1e4669d] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git )
+  INFO [d1e4669d] Finished in 0.875 seconds with exit status 0 (successful).
+  INFO [2ecc1839] Running /usr/bin/env git remote update --prune on 54.235.160.224
+ DEBUG [2ecc1839] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2ecc1839] 	Fetching origin
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	remote: Enumerating objects: 22712, done.[K
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	remote: Counting objects:   0% (1/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   1% (228/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   2% (455/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   3% (682/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   4% (909/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   5% (1136/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   6% (1363/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   7% (1590/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   8% (1817/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:   9% (2045/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  10% (2272/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  11% (2499/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  12% (2726/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  13% (2953/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  14% (3180/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  15% (3407/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  16% (3634/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  17% (3862/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  18% (4089/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  19% (4316/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  20% (4543/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  21% (4770/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  22% (4997/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  23% (5224/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  24% (5451/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  25% (5678/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  26% (5906/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  27% (6133/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  28% (6360/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  29% (6587/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  30% (6814/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  31% (7041/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  32% (7268/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  33% (7495/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  34% (7723/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  35% (7950/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  36% (8177/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  37% (8404/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  38% (8631/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  39% (8858/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  40% (9085/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  41% (9312/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  42% (9540/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  43% (9767/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  44% (9994/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  45% (10221/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  46% (10448/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  47% (10675/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  48% (10902/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  49% (11129/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  50% (11356/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  51% (11584/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  52% (11811/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  53% (12038/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  54% (12265/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  55% (12492/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  56% (12719/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  57% (12946/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  58% (13173/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  59% (13401/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  60% (13628/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  61% (13855/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  62% (14082/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  63% (14309/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  64% (14536/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  65% (14763/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  66% (14990/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  67% (15218/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  68% (15445/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  69% (15672/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  70% (15899/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  71% (16126/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  72% (16353/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  73% (16580/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  74% (16807/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  75% (17034/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  76% (17262/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  77% (17489/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  78% (17716/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  79% (17943/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  80% (18170/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  81% (18397/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  82% (18624/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  83% (18851/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  84% (19079/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  85% (19306/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  86% (19533/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  87% (19760/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  88% (19987/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  89% (20214/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  90% (20441/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  91% (20668/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  92% (20896/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  93% (21123/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  94% (21350/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  95% (21577/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  96% (21804/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  97% (22031/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  98% (22258/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects:  99% (22485/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects: 100% (22712/22712)[K
+ DEBUG [2ecc1839] 	remote: Counting objects: 100% (22712/22712), done.[K
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	remote: Compressing objects:   0% (1/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   1% (188/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   2% (376/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   3% (564/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   4% (752/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   5% (940/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   6% (1128/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   7% (1316/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   8% (1503/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:   9% (1691/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  10% (1879/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  11% (2067/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  12% (2255/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  13% (2443/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  14% (2631/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  15% (2818/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  16% (3006/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  17% (3194/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  18% (3382/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  19% (3570/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  20% (3758/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  21% (3946/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  22% (4133/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  23% (4321/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  24% (4509/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  25% (4697/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  26% (4885/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  27% (5073/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  28% (5261/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  29% (5448/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  30% (5636/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  31% (5824/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  32% (6012/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  33% (6200/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  34% (6388/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  35% (6576/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  36% (6763/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  37% (6951/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  38% (7139/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  39% (7327/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  40% (7515/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  41% (7703/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  42% (7891/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  43% (8078/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  44% (8266/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  45% (8454/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  46% (8642/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  47% (8830/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  48% (9018/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  49% (9206/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  50% (9393/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  51% (9581/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  52% (9769/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  53% (9957/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  54% (10145/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  55% (10333/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  56% (10521/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  57% (10709/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  58% (10896/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  59% (11084/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  60% (11272/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  61% (11460/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  62% (11648/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  63% (11836/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  64% (12024/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  65% (12211/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  66% (12399/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  67% (12587/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  68% (12775/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  69% (12963/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  70% (13151/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  71% (13339/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  72% (13526/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  73% (13714/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  74% (13902/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  75% (14090/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  76% (14278/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  77% (14466/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  78% (14654/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  79% (14841/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  80% (15029/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  81% (15217/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  82% (15405/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  83% (15593/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  84% (15781/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  85% (15969/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  86% (16156/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  87% (16344/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  88% (16532/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  89% (16720/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  90% (16908/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  91% (17096/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  92% (17284/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  93% (17471/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  94% (17659/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  95% (17847/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  96% (18035/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  97% (18223/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  98% (18411/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects:  99% (18599/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects: 100% (18786/18786)[K
+ DEBUG [2ecc1839] 	remote: Compressing objects: 100% (18786/18786), done.[K
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	Receiving objects:   0% (1/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   1% (228/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   2% (455/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   3% (682/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   4% (909/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   5% (1136/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   6% (1363/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   7% (1590/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   8% (1817/22702)
+ DEBUG [2ecc1839] 	Receiving objects:   9% (2044/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  10% (2271/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  11% (2498/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  12% (2725/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  13% (2952/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  14% (3179/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  15% (3406/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  16% (3633/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  17% (3860/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  18% (4087/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  19% (4314/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  20% (4541/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  21% (4768/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  22% (4995/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  23% (5222/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  24% (5449/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  25% (5676/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  26% (5903/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  27% (6130/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  28% (6357/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  29% (6584/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  30% (6811/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  31% (7038/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  32% (7265/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  33% (7492/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  34% (7719/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  35% (7946/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  36% (8173/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  37% (8400/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  38% (8627/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  39% (8854/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  39% (8961/22702), 4.00 MiB | 7.98 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  40% (9081/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  41% (9308/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  42% (9535/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  43% (9762/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  44% (9989/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  45% (10216/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  46% (10443/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  47% (10670/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  48% (10897/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  49% (11124/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  50% (11351/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  51% (11579/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  52% (11806/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  53% (12033/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  54% (12260/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  55% (12487/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  56% (12714/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  57% (12941/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  58% (13168/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  59% (13395/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  60% (13622/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  61% (13849/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  62% (14076/22702), 9.33 MiB | 9.33 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  63% (14303/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  64% (14530/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  65% (14757/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  66% (14984/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  67% (15211/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  68% (15438/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  69% (15665/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  70% (15892/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  71% (16119/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  72% (16346/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  73% (16573/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  74% (16800/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  75% (17027/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  76% (17254/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  77% (17481/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  78% (17708/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  79% (17935/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  80% (18162/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  81% (18389/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  82% (18616/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  83% (18843/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  83% (18859/22702), 15.14 MiB | 10.09 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  84% (19070/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  85% (19297/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  86% (19524/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  87% (19751/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  88% (19978/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  89% (20205/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  90% (20432/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  91% (20659/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  92% (20886/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  93% (21113/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  94% (21340/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  95% (21567/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  96% (21794/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  97% (22021/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  98% (22248/22702), 23.25 MiB | 11.62 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects:  99% (22475/22702), 30.68 MiB | 12.27 MiB/s
+ DEBUG [2ecc1839] 	remote: Total 22702 (delta 2786), reused 22702 (delta 2786), pack-reused 0[K
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	Receiving objects: 100% (22702/22702), 30.68 MiB | 12.27 MiB/s
+ DEBUG [2ecc1839] 	Receiving objects: 100% (22702/22702), 31.50 MiB | 12.38 MiB/s, done.
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	Resolving deltas:   0% (0/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:   3% (84/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:   4% (112/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:   5% (140/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:   6% (182/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:   7% (196/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  12% (338/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  13% (363/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  14% (393/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  15% (418/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  16% (446/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  17% (474/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  18% (502/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  19% (530/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  20% (558/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  21% (586/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  22% (613/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  23% (644/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  24% (669/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  25% (697/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  26% (725/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  27% (755/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  28% (781/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  29% (810/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  30% (836/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  31% (874/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  37% (1032/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  40% (1126/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  43% (1217/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  45% (1275/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  49% (1368/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  50% (1393/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  51% (1426/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  52% (1454/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  53% (1480/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  54% (1505/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  55% (1533/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  56% (1568/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  57% (1589/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  58% (1616/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  59% (1644/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  60% (1673/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  61% (1700/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  62% (1728/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  63% (1757/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  64% (1786/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  65% (1811/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  66% (1840/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  67% (1867/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  68% (1898/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  69% (1923/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  70% (1951/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  71% (1979/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  72% (2006/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  73% (2035/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  74% (2062/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  75% (2090/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  76% (2118/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  77% (2165/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  78% (2177/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  79% (2202/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  80% (2229/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  81% (2257/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  82% (2285/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  83% (2315/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  84% (2342/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  85% (2372/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  86% (2396/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  87% (2424/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  88% (2452/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  89% (2480/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  90% (2508/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  91% (2536/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  92% (2564/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  93% (2591/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  94% (2619/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  95% (2647/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  96% (2677/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  97% (2703/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  98% (2731/2786)
+ DEBUG [2ecc1839] 	Resolving deltas:  99% (2759/2786)
+ DEBUG [2ecc1839] 	Resolving deltas: 100% (2786/2786)
+ DEBUG [2ecc1839] 	Resolving deltas: 100% (2786/2786), completed with 6 local objects.
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	From github.com:phatnx/shop_katsu
+ DEBUG [2ecc1839] 	
+ DEBUG [2ecc1839] 	   dc14ada2c..488c0214d  master     -> master
+ DEBUG [2ecc1839] 	
+  INFO [2ecc1839] Finished in 4.917 seconds with exit status 0 (successful).
+ DEBUG [e6df73df] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [e6df73df] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [e6df73df] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [a0e99075] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422032429 on 54.235.160.224
+ DEBUG [a0e99075] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422032429 )
+  INFO [a0e99075] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [a84af439] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240422032429 on 54.235.160.224
+ DEBUG [a84af439] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240422032429 )
+  INFO [a84af439] Finished in 3.250 seconds with exit status 0 (successful).
+ DEBUG [e3b9e814] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [e3b9e814] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [e3b9e814] Finished in 0.945 seconds with exit status 0 (successful).
+ DEBUG [2dc6e039] Running /usr/bin/env git rev-list --max-count=1 master on 54.235.160.224
+ DEBUG [2dc6e039] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ef51daa07bdcd12e2c81.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [2dc6e039] 	488c0214d73ebb7ec84dd8af8841c8b759e57fcf
+ DEBUG [2dc6e039] 	
+ DEBUG [2dc6e039] Finished in 0.923 seconds with exit status 0 (successful).
+ DEBUG [62b6f4e7] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [62b6f4e7] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi
+ DEBUG [62b6f4e7] Finished in 0.861 seconds with exit status 0 (successful).
+  INFO [3b1b4320] Running /usr/bin/env echo "488c0214d73ebb7ec84dd8af8841c8b759e57fcf" > REVISION on 54.235.160.224
+ DEBUG [3b1b4320] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env echo "488c0214d73ebb7ec84dd8af8841c8b759e57fcf" > REVISION )
+  INFO [3b1b4320] Finished in 0.978 seconds with exit status 0 (successful).
+  INFO [37c4c145] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422032429/public on 54.235.160.224
+ DEBUG [37c4c145] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422032429/public )
+  INFO [37c4c145] Finished in 0.922 seconds with exit status 0 (successful).
+ DEBUG [abe6b452] Running [ -L /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets ] on 54.235.160.224
+ DEBUG [abe6b452] Command: [ -L /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets ]
+ DEBUG [abe6b452] Finished in 0.818 seconds with exit status 1 (failed).
+ DEBUG [9cc7b931] Running [ -d /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets ] on 54.235.160.224
+ DEBUG [9cc7b931] Command: [ -d /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets ]
+ DEBUG [9cc7b931] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [b0905699] Running /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets on 54.235.160.224
+ DEBUG [b0905699] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets )
+  INFO [b0905699] Finished in 0.924 seconds with exit status 0 (successful).
+  INFO [b54cb5da] Running /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets on 54.235.160.224
+ DEBUG [b54cb5da] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240422032429/public/assets )
+  INFO [b54cb5da] Finished in 0.917 seconds with exit status 0 (successful).
+ DEBUG [4a36be42] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [4a36be42] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi
+ DEBUG [4a36be42] Finished in 1.330 seconds with exit status 0 (successful).
+  INFO [e989afdc] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true on 54.235.160.224
+ DEBUG [e989afdc] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [e989afdc] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [1046cbb5] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle on 54.235.160.224
+ DEBUG [1046cbb5] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle )
+  INFO [1046cbb5] Finished in 1.077 seconds with exit status 0 (successful).
+  INFO [25c8d4c1] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test on 54.235.160.224
+ DEBUG [25c8d4c1] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [25c8d4c1] Finished in 1.122 seconds with exit status 0 (successful).
+ DEBUG [e679c7f7] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [e679c7f7] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi
+ DEBUG [e679c7f7] Finished in 0.916 seconds with exit status 0 (successful).
+ DEBUG [c8e90845] Running $HOME/.rbenv/bin/rbenv exec bundle check on 54.235.160.224
+ DEBUG [c8e90845] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [c8e90845] 	[33mWarning: the running version of Bundler (2.2.3) is older than the version that created the lockfile (2.2.24). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.2.24`.
+ DEBUG [c8e90845] 	
+ DEBUG [c8e90845] 	[0m
+ DEBUG [c8e90845] 	The Gemfile's dependencies are satisfied
+ DEBUG [c8e90845] 	
+ DEBUG [c8e90845] Finished in 2.312 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [5e23af5d] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [5e23af5d] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422032429; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422032429'" 1>&2; false; fi
+ DEBUG [5e23af5d] Finished in 0.795 seconds with exit status 0 (successful).
+  INFO [937060d7] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile on 54.235.160.224
+ DEBUG [937060d7] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422032429 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[1myarn install v1.22.19[22m
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[33mwarning[39m package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[2m[1/4][22m Resolving packages...
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	⠁ 
+ DEBUG [937060d7] 	[0K
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[2m[2/4][22m Fetching packages...
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[2m[3/4][22m Linking dependencies...
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	[2m[4/4][22m Building fresh packages...
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	[2K
+ DEBUG [937060d7] 	[1G
+ DEBUG [937060d7] 	Done in 12.21s.
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	W, [2024-04-22T03:25:30.404766 #2428]  WARN -- : Removed sourceMappingURL comment for missing asset 'rails_admin/jquery-migrate.min.map' from /home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/rails_admin-2.2.1/app/assets/javascripts/rails_admin/jquery.migrate.js
+ DEBUG [937060d7] 	
+ DEBUG [937060d7] 	W, [2024-04-22T03:25:39.190664 #2428]  WARN -- : Removed sourceMappingURL comment for missing asset './chartkick.min.js.map' from /home/ubuntu/apps/shop_katsu/releases/20240422032429/app/assets/javascripts/chartkick.min.js
+ DEBUG [937060d7] 	
