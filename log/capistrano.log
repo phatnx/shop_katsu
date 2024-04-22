@@ -765,3 +765,324 @@
   INFO [68cde38d] Finished in 0.882 seconds with exit status 0 (successful).
   INFO [be1aa4c2] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.235.160.224
  DEBUG [be1aa4c2] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-04-22 13:24:43 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6b67aca8] Running [ -d $HOME/.rbenv/versions/3.0.0 ] on 54.235.160.224
+ DEBUG [6b67aca8] Command: [ -d $HOME/.rbenv/versions/3.0.0 ]
+ DEBUG [6b67aca8] Finished in 3.843 seconds with exit status 0 (successful).
+  INFO [1709e571] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p on 54.235.160.224
+ DEBUG [1709e571] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/sockets -p
+  INFO [1709e571] Finished in 0.918 seconds with exit status 0 (successful).
+  INFO [2a03e394] Running mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p on 54.235.160.224
+ DEBUG [2a03e394] Command: mkdir /home/ubuntu/apps/shop_katsu/shared/tmp/pids -p
+  INFO [2a03e394] Finished in 1.242 seconds with exit status 0 (successful).
+  INFO [899660a1] Running /usr/bin/env mkdir -p /tmp on 54.235.160.224
+ DEBUG [899660a1] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [899660a1] Finished in 0.901 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-1cddc1a6c77d9f44e42b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-1cddc1a6c77d9f44e42b.sh 100.0%
+  INFO [4b9ba5e4] Running /usr/bin/env chmod 700 /tmp/git-ssh-1cddc1a6c77d9f44e42b.sh on 54.235.160.224
+ DEBUG [4b9ba5e4] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-1cddc1a6c77d9f44e42b.sh )
+  INFO [4b9ba5e4] Finished in 0.983 seconds with exit status 0 (successful).
+  INFO [1dea3b0d] Running /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD on 54.235.160.224
+ DEBUG [1dea3b0d] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env git ls-remote git@github.com:phatnx/shop_katsu.git HEAD )
+ DEBUG [1dea3b0d] 	1844be74445358378fecef5d6d519cd9c30d88d1
+ DEBUG [1dea3b0d] 		
+ DEBUG [1dea3b0d] 	HEAD
+  INFO [1dea3b0d] Finished in 2.053 seconds with exit status 0 (successful).
+  INFO [8519663f] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases on 54.235.160.224
+ DEBUG [8519663f] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared /home/ubuntu/apps/shop_katsu/releases )
+  INFO [8519663f] Finished in 0.710 seconds with exit status 0 (successful).
+  INFO [a584d5ad] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets on 54.235.160.224
+ DEBUG [a584d5ad] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/shared/public/assets )
+  INFO [a584d5ad] Finished in 0.919 seconds with exit status 0 (successful).
+ DEBUG [69bf736a] Running [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ] on 54.235.160.224
+ DEBUG [69bf736a] Command: [ -f /home/ubuntu/apps/shop_katsu/shared/puma.rb ]
+ DEBUG [69bf736a] Finished in 0.778 seconds with exit status 0 (successful).
+ DEBUG [9352ae99] Running [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ] on 54.235.160.224
+ DEBUG [9352ae99] Command: [ -f /home/ubuntu/apps/shop_katsu/current/REVISION ]
+ DEBUG [9352ae99] Finished in 0.858 seconds with exit status 0 (successful).
+ DEBUG [4c8b4a1f] Running /usr/bin/env cat /home/ubuntu/apps/shop_katsu/current/REVISION 2>/dev/null on 54.235.160.224
+ DEBUG [4c8b4a1f] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env cat /home/ubuntu/apps/shop_katsu/current/REVISION 2>/dev/null )
+ DEBUG [4c8b4a1f] 	b1f0a58fd9f7706e2a6c7896992b151c3a5d683b
+ DEBUG [4c8b4a1f] 	
+ DEBUG [4c8b4a1f] Finished in 0.921 seconds with exit status 0 (successful).
+ DEBUG [bc5448dd] Running [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ] on 54.235.160.224
+ DEBUG [bc5448dd] Command: [ -f /home/ubuntu/apps/shop_katsu/repo/HEAD ]
+ DEBUG [bc5448dd] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/shop_katsu/repo
+ DEBUG [8441d5d8] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [8441d5d8] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [8441d5d8] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [704ee7c4] Running /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git on 54.235.160.224
+ DEBUG [704ee7c4] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env git remote set-url origin git@github.com:phatnx/shop_katsu.git )
+  INFO [704ee7c4] Finished in 0.791 seconds with exit status 0 (successful).
+  INFO [255f4b8c] Running /usr/bin/env git remote update --prune on 54.235.160.224
+ DEBUG [255f4b8c] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [255f4b8c] 	Fetching origin
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	remote: Enumerating objects: 9, done.[K
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	remote: Counting objects:  11% (1/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  22% (2/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  33% (3/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  44% (4/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  55% (5/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  66% (6/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  77% (7/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects:  88% (8/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects: 100% (9/9)[K
+ DEBUG [255f4b8c] 	remote: Counting objects: 100% (9/9), done.[K
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	remote: Compressing objects:  33% (1/3)[K
+ DEBUG [255f4b8c] 	remote: Compressing objects:  66% (2/3)[K
+ DEBUG [255f4b8c] 	remote: Compressing objects: 100% (3/3)[K
+ DEBUG [255f4b8c] 	remote: Compressing objects: 100% (3/3), done.[K
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0[K
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	Unpacking objects:  20% (1/5)
+ DEBUG [255f4b8c] 	Unpacking objects:  40% (2/5)
+ DEBUG [255f4b8c] 	Unpacking objects:  60% (3/5)
+ DEBUG [255f4b8c] 	Unpacking objects:  80% (4/5)
+ DEBUG [255f4b8c] 	Unpacking objects: 100% (5/5)
+ DEBUG [255f4b8c] 	Unpacking objects: 100% (5/5), 7.58 KiB | 1.26 MiB/s, done.
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	From github.com:phatnx/shop_katsu
+ DEBUG [255f4b8c] 	
+ DEBUG [255f4b8c] 	   2cbf02b74..5b76433a4  master     -> master
+ DEBUG [255f4b8c] 	
+  INFO [255f4b8c] Finished in 2.282 seconds with exit status 0 (successful).
+ DEBUG [751b62d0] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [751b62d0] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [751b62d0] Finished in 0.859 seconds with exit status 0 (successful).
+  INFO [c3c33bb6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459 on 54.235.160.224
+ DEBUG [c3c33bb6] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459 )
+  INFO [c3c33bb6] Finished in 0.782 seconds with exit status 0 (successful).
+  INFO [828d6508] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240422062459 on 54.235.160.224
+ DEBUG [828d6508] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/shop_katsu/releases/20240422062459 )
+  INFO [828d6508] Finished in 3.164 seconds with exit status 0 (successful).
+ DEBUG [930b9dd0] Running if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [930b9dd0] Command: if test ! -d /home/ubuntu/apps/shop_katsu/repo; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/repo'" 1>&2; false; fi
+ DEBUG [930b9dd0] Finished in 0.923 seconds with exit status 0 (successful).
+ DEBUG [1ef90fd9] Running /usr/bin/env git rev-list --max-count=1 master on 54.235.160.224
+ DEBUG [1ef90fd9] Command: cd /home/ubuntu/apps/shop_katsu/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1cddc1a6c77d9f44e42b.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1ef90fd9] 	5b76433a41e932efa7adcc130a48bc636e5e3836
+ DEBUG [1ef90fd9] 	
+ DEBUG [1ef90fd9] Finished in 0.919 seconds with exit status 0 (successful).
+ DEBUG [78dd0c0f] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [78dd0c0f] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [78dd0c0f] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [1ecb4a78] Running /usr/bin/env echo "5b76433a41e932efa7adcc130a48bc636e5e3836" > REVISION on 54.235.160.224
+ DEBUG [1ecb4a78] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env echo "5b76433a41e932efa7adcc130a48bc636e5e3836" > REVISION )
+  INFO [1ecb4a78] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [fd125096] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459/public on 54.235.160.224
+ DEBUG [fd125096] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459/public )
+  INFO [fd125096] Finished in 0.920 seconds with exit status 0 (successful).
+ DEBUG [db3143e7] Running [ -L /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets ] on 54.235.160.224
+ DEBUG [db3143e7] Command: [ -L /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets ]
+ DEBUG [db3143e7] Finished in 0.820 seconds with exit status 1 (failed).
+ DEBUG [4ee01611] Running [ -d /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets ] on 54.235.160.224
+ DEBUG [4ee01611] Command: [ -d /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets ]
+ DEBUG [4ee01611] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [faf45df5] Running /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets on 54.235.160.224
+ DEBUG [faf45df5] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env rm -rf /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets )
+  INFO [faf45df5] Finished in 0.819 seconds with exit status 0 (successful).
+  INFO [4a4d43a5] Running /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets on 54.235.160.224
+ DEBUG [4a4d43a5] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env ln -s /home/ubuntu/apps/shop_katsu/shared/public/assets /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets )
+  INFO [4a4d43a5] Finished in 0.819 seconds with exit status 0 (successful).
+ DEBUG [93e00b84] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [93e00b84] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [93e00b84] Finished in 0.778 seconds with exit status 0 (successful).
+  INFO [0a30cf3c] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true on 54.235.160.224
+ DEBUG [0a30cf3c] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [0a30cf3c] Finished in 1.058 seconds with exit status 0 (successful).
+  INFO [990d8bd7] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle on 54.235.160.224
+ DEBUG [990d8bd7] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/shop_katsu/shared/bundle )
+  INFO [990d8bd7] Finished in 1.026 seconds with exit status 0 (successful).
+  INFO [04324349] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test on 54.235.160.224
+ DEBUG [04324349] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [04324349] Finished in 1.125 seconds with exit status 0 (successful).
+ DEBUG [c0ee3a5d] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [c0ee3a5d] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [c0ee3a5d] Finished in 0.918 seconds with exit status 0 (successful).
+ DEBUG [8cfb6ddb] Running $HOME/.rbenv/bin/rbenv exec bundle check on 54.235.160.224
+ DEBUG [8cfb6ddb] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [8cfb6ddb] 	[33mWarning: the running version of Bundler (2.2.3) is older than the version that created the lockfile (2.2.24). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.2.24`.
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] 	[0m
+ DEBUG [8cfb6ddb] 	[31mThe following gems are missing[0m
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] 	[31m * rb-fsevent (0.11.2)[0m
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] 	[31m * rb-inotify (0.10.1)[0m
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] 	[31m * listen (3.9.0)[0m
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [8cfb6ddb] 	
+ DEBUG [8cfb6ddb] Finished in 2.661 seconds with exit status 1 (failed).
+  INFO [06cd4ed4] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet on 54.235.160.224
+ DEBUG [06cd4ed4] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+  INFO [06cd4ed4] Finished in 7.065 seconds with exit status 0 (successful).
+ DEBUG [c97728b7] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [c97728b7] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [c97728b7] Finished in 0.793 seconds with exit status 0 (successful).
+  INFO [19771b06] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile on 54.235.160.224
+ DEBUG [19771b06] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[1myarn install v1.22.19[22m
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[33mwarning[39m package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[2m[1/4][22m Resolving packages...
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	⠁ 
+ DEBUG [19771b06] 	[0K
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[2m[2/4][22m Fetching packages...
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[2m[3/4][22m Linking dependencies...
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	[2m[4/4][22m Building fresh packages...
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	[2K
+ DEBUG [19771b06] 	[1G
+ DEBUG [19771b06] 	Done in 10.37s.
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	W, [2024-04-22T06:26:00.501345 #1945]  WARN -- : Removed sourceMappingURL comment for missing asset 'rails_admin/jquery-migrate.min.map' from /home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/rails_admin-2.2.1/app/assets/javascripts/rails_admin/jquery.migrate.js
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	W, [2024-04-22T06:26:07.375588 #1945]  WARN -- : Removed sourceMappingURL comment for missing asset './chartkick.min.js.map' from /home/ubuntu/apps/shop_katsu/releases/20240422062459/app/assets/javascripts/chartkick.min.js
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	W, [2024-04-22T06:26:47.254157 #1945]  WARN -- : Removed sourceMappingURL comment for missing asset 'jquery.zoomtoo.js.map' from /home/ubuntu/apps/shop_katsu/releases/20240422062459/app/assets/javascripts/jquery.zoomtoo.js
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	W, [2024-04-22T06:26:47.840028 #1945]  WARN -- : Removed sourceMappingURL comment for missing asset 'lightbox.min.map' from /home/ubuntu/apps/shop_katsu/releases/20240422062459/app/assets/javascripts/lightbox.min.js
+ DEBUG [19771b06] 	
+ DEBUG [19771b06] 	Everything's up-to-date. Nothing to do
+ DEBUG [19771b06] 	
+  INFO [19771b06] Finished in 100.812 seconds with exit status 0 (successful).
+ DEBUG [2f3df197] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [2f3df197] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [2f3df197] Finished in 0.858 seconds with exit status 0 (successful).
+  INFO [96258a0d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459/assets_manifest_backup on 54.235.160.224
+ DEBUG [96258a0d] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/shop_katsu/releases/20240422062459/assets_manifest_backup )
+  INFO [96258a0d] Finished in 0.955 seconds with exit status 0 (successful).
+ DEBUG [3fd66adc] Running /usr/bin/env ls /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest* on 54.235.160.224
+ DEBUG [3fd66adc] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env ls /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest* )
+ DEBUG [3fd66adc] 	/home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest-31212b743a6c28480eb37adbdfe532a6.json
+ DEBUG [3fd66adc] 	
+ DEBUG [3fd66adc] Finished in 0.920 seconds with exit status 0 (successful).
+ DEBUG [1efbd94a] Running /usr/bin/env ls /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest* on 54.235.160.224
+ DEBUG [1efbd94a] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env ls /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest* )
+ DEBUG [1efbd94a] 	/home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest-31212b743a6c28480eb37adbdfe532a6.json
+ DEBUG [1efbd94a] 	
+ DEBUG [1efbd94a] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [da4f5e1d] Running /usr/bin/env cp /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest-31212b743a6c28480eb37adbdfe532a6.json /home/ubuntu/apps/shop_katsu/releases/20240422062459/assets_manifest_backup on 54.235.160.224
+ DEBUG [da4f5e1d] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; /usr/bin/env cp /home/ubuntu/apps/shop_katsu/releases/20240422062459/public/assets/.sprockets-manifest-31212b743a6c28480eb37adbdfe532a6.json /home/ubuntu/apps/shop_katsu/releases/20240422062459/assets_manifest_backup )
+  INFO [da4f5e1d] Finished in 0.785 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [19c35167] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [19c35167] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [19c35167] Finished in 0.847 seconds with exit status 0 (successful).
+  INFO [7b398996] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate on 54.235.160.224
+ DEBUG [7b398996] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [7b398996] Finished in 10.446 seconds with exit status 0 (successful).
+ DEBUG [d8358c1e] Running if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi on 54.235.160.224
+ DEBUG [d8358c1e] Command: if test ! -d /home/ubuntu/apps/shop_katsu/releases/20240422062459; then echo "Directory does not exist '/home/ubuntu/apps/shop_katsu/releases/20240422062459'" 1>&2; false; fi
+ DEBUG [d8358c1e] Finished in 0.803 seconds with exit status 0 (successful).
+  INFO [c65591c1] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:seed on 54.235.160.224
+ DEBUG [c65591c1] Command: cd /home/ubuntu/apps/shop_katsu/releases/20240422062459 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.0" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:seed )
+ DEBUG [c65591c1] 	rake aborted!
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	ActiveRecord::RecordInvalid: Validation failed: Brand must exist
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/validations.rb:80:in `raise_validation_error'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/validations.rb:53:in `save!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/transactions.rb:302:in `block in save!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/transactions.rb:354:in `block in with_transaction_returning_status'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `block in transaction'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/connection_adapters/abstract/transaction.rb:319:in `block in within_new_transaction'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/connection_adapters/abstract/transaction.rb:317:in `within_new_transaction'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4
+ DEBUG [c65591c1] 	.1/lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `transaction'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/transactions.rb:350:in `with_transaction_returning_status'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/transactions.rb:302:in `save!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/suppressor.rb:48:in `save!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/persistence.rb:55:in `create!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/persistence.rb:52:in `block in create!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/persistence.rb:52:in `collect'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/persistence.rb:52:in `create!'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/releases/20240422062459/db/seeds.rb:75:in `<main>'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/railties-6.1.4.1/lib/rails/engine.rb:566:in `load'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/railties-6.1.4.1/lib/rails/engine.rb:566:in `block in load_seed'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/execution_wrapper.rb:88:in `wrap'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/railties-6.1.4.1/lib/rails/engine.rb:640:in `block (2 levels) in <class:Engine>'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/callbacks.rb:126:in `instance_exec'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/ho
+ DEBUG [c65591c1] 	me/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4.1/lib/active_support/callbacks.rb:137:in `run_callbacks'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/railties-6.1.4.1/lib/rails/engine.rb:566:in `load_seed'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/tasks/database_tasks.rb:450:in `load_seed'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/railties/databases.rake:392:in `block (2 levels) in <main>'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/apps/shop_katsu/shared/bundle/ruby/3.0.0/gems/rake-13.2.1/exe/rake:27:in `<top (required)>'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/.rbenv/versions/3.0.0/bin/bundle:23:in `load'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	/home/ubuntu/.rbenv/versions/3.0.0/bin/bundle:23:in `<main>'
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	Tasks: TOP => db:seed
+ DEBUG [c65591c1] 	
+ DEBUG [c65591c1] 	(See full trace by running task with --trace)
+ DEBUG [c65591c1] 	

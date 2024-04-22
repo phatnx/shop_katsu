@@ -85,15 +85,15 @@ namespace :deploy do
       end
   end
 
-  desc "seed database"
-  task :seed do
-    on roles(:db) do |host|
-      within "#{release_path}" do
-        execute :rake, "db:seed"
-      end
-    end
-  end
-  after :migrate, :seed
+  # desc "seed database"
+  # task :seed do
+  #   on roles(:db) do |host|
+  #     within "#{release_path}" do
+  #       execute :rake, "db:seed"
+  #     end
+  #   end
+  # end
+  # after :migrate, :seed
 
 
   before :starting,     :check_revision
