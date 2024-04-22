@@ -1,0 +1,1 @@
+Handlebars.registerHelper("when",function(n,r,e,t){return{eq:function(n,r){return n==r},noteq:function(n,r){return n!=r},gt:function(n,r){return Number(n)>Number(r)},or:function(n,r){return n||r},and:function(n,r){return n&&r},"%":function(n,r){return n%r==0}}[r](n,e)?t.fn(this):t.inverse(this)});
